@@ -15,17 +15,16 @@ public class PlayerController : BaseController
     protected override void HandleAction()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertial = Input.GetAxisRaw("Vertical");
-        movementDirection = new Vector2(horizontal, vertial).normalized;
+        float vertical = Input.GetAxisRaw("Vertical");
+        movementDirection = new Vector2(horizontal, vertical).normalized;
 
         Vector2 mousePosition = Input.mousePosition;
         Vector2 worldPos = camera.ScreenToWorldPoint(mousePosition);
         lookDirection = (worldPos - (Vector2)transform.position);
 
-        if(lookDirection.magnitude<0.9f)
+        if (lookDirection.magnitude < .9f)
         {
             lookDirection = Vector2.zero;
-
         }
         else
         {
