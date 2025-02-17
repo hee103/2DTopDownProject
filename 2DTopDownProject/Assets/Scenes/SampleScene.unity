@@ -155,6 +155,7 @@ MonoBehaviour:
   projectilePrefabs:
   - {fileID: 5168280550024327078, guid: a4b8921171cd18545ab6aaf877f59f82, type: 3}
   - {fileID: 7313637969223832501, guid: 7ff2d9e7107186241a4f358c65511e97, type: 3}
+  impactParticleSystem: {fileID: 755163750}
 --- !u!4 &109021836
 Transform:
   m_ObjectHideFlags: 0
